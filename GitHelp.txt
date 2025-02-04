@@ -23,3 +23,4 @@ git clone | Команда для клонирования
 mkdir dir_name | команда для создание папки
 touch name_file | создание файла
 rm name_file | Команда для удаление файла
+git rm --cached -r .dir_name - удалени директори в репозитории
