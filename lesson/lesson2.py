@@ -1,4 +1,3 @@
-
 class Hero:
 
     def __init__(self, name, hp, lvl):
@@ -29,9 +28,9 @@ class Warrior(Hero):
 class BankAccount:
 
     def __init__(self, client, balance, password):
-        self.client = client # открытый
-        self._balance = balance # Защищенный атрибут
-        self.__password = password # Приватный атрибут
+        self.client = client  # открытый
+        self._balance = balance  # Защищенный атрибут
+        self.__password = password  # Приватный атрибут
 
     def __top_up_balance(self, amount):
         self._balance += amount
@@ -42,6 +41,7 @@ class BankAccount:
     def add_balance(self, cash):
         self.__top_up_balance(cash)
         print('Balance update!')
+
 
 client = BankAccount("John Doe", 1000, 123456)
 print(dir(client))
