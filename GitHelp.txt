@@ -25,9 +25,12 @@ touch name_file | создание файла
 rm name_file | Команда для удаление файла
 git rm --cached -r .dir_name - удалени директори в репозитории
 
-
 git branch name_branch | команда для создание ветки
-git checkout| | переклютася между ветками
+git checkout| | переключатася между ветками
 
+pip freeze -> requirements.txt | команда для создание файла где есть все зависимости
+pip install -r requirements.txt | команда для установки всех пакетов из requirements
 
-venv\Scripts\activate
+deactivate | Команда для деактивация виртуального окружение
+py -m venv venv_name | Команда для создание виртуального окружение
+venv\Scripts\activate | Команда для активация виртуального окружение на Windows
