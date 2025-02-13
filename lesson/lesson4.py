@@ -9,6 +9,19 @@ def my_decorator(func):
     return wrapper
 
 
+
+
+# func = greet()
+def repeat(n):
+    def decorator(func):  # step 4
+        def wrapper(*args, **kwargs):
+            for i in range(n):  # step 6
+                func(*args, **kwargs)  # step 6
+
+        return wrapper  # step 5
+    return decorator
+
+
 @my_decorator
 def hello():
     print("Привет мир!")
